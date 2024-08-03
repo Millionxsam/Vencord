@@ -133,6 +133,7 @@ export default async function generateImage({ prompt, prompt_negative = "nsfw" }
     }
 }
 
+
 function dataURItoBlob(dataURI) {
     // convert base64/URLEncoded data component to raw binary data held in a string
     var byteString;
