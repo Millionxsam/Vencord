@@ -9,7 +9,6 @@ import "./styles.css";
 import { addChatBarButton, removeChatBarButton } from "@api/ChatButtons";
 import { addButton, removeButton } from "@api/MessagePopover";
 import { classNameFactory } from "@api/Styles";
-import { Devs } from "@utils/constants";
 import { openModal } from "@utils/modal";
 import definePlugin from "@utils/types";
 import { ChannelStore } from "@webpack/common";
@@ -23,7 +22,10 @@ export const cl = classNameFactory("vc-at-");
 export default definePlugin({
     name: "AI Tools",
     description: "Enhance your Discord experience with AI text & image generation",
-    authors: [Devs.Millionxsam],
+    authors: [{
+        name: "Millionxsam",
+        id: 745660092829007932n
+    }],
     contextMenus: {
         "message": messageContextMenu
     },
